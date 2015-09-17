@@ -97,6 +97,8 @@ jQuery(document).ready(function(){
       }   
    });
    */
+   
+   
    function fondos(valor,temp){
       var fondo ='';
       if(valor=='800' && temp<1){
