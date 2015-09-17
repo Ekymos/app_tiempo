@@ -1,0 +1,37 @@
+/* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+html, body{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   font-family: Helvetica, Arial, sans-serif;
+}
+.cuerpo{
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.jumbotron{
+   margin-bottom: 0;
+   background-color: transparent;
+}
+#ir{
+   background-color:#6A4F93;
+   cursor: pointer;
+   padding: 6px;
+   color: #FFF;
+}
+.informacion{
+   //display: none;
+}
+.informacion{
+	p{
+   		text-transform:capitalize;
+	}
+}
+.listados{
+   border-bottom: solid 1px #dedede;
+   cursor: pointer;
+   display: block;
+}
