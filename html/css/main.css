@@ -60,6 +60,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 .cuerpo {
@@ -68,15 +69,31 @@ html, body {
 }
 
 .jumbotron {
+  padding: 0;
+  margin: 0;
   margin-bottom: 0;
   background-color: transparent;
 }
 
-#ir {
+.btn-ir {
   background-color: #6A4F93;
   cursor: pointer;
-  padding: 6px;
+  padding: 0.37rem;
   color: #FFF;
+  display: block;
+  width: 10%;
+  height: 4.37rem;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 350%;
+}
+
+.input-buscador {
+  width: 90%;
+  height: 4.37rem;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 .informacion p {
@@ -84,7 +101,28 @@ html, body {
 }
 
 .listados {
-  border-bottom: solid 1px #dedede;
+  width: 100%;
   cursor: pointer;
   display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.listados p {
+  padding: 0.75rem;
+  margin: 0;
+  font-size: 0.87rem;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+.listados p:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+.img-otonio-viento {
+  background-image: url("../img/otonio-viento.gif");
 }

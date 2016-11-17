@@ -1,37 +1,68 @@
 /* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 
 html, body{
    margin: 0;
    padding: 0;
    height: 100%;
    font-family: Helvetica, Arial, sans-serif;
+   font-size: 16px;
 }
 .cuerpo{
    background-repeat: no-repeat;
    background-size: cover;
 }
 .jumbotron{
+  padding: 0;
+  margin: 0;
    margin-bottom: 0;
    background-color: transparent;
 }
-#ir{
-   background-color:#6A4F93;
-   cursor: pointer;
-   padding: 6px;
-   color: #FFF;
+.btn-ir{
+  background-color:#6A4F93;
+  cursor: pointer;
+  padding: 0.37rem;//6px
+  color: #FFF;
+  display: block;
+  width: 10%;
+  height: 4.37rem;//70px
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 350%;
+}
+.input-buscador{
+  width: 90%;
+  height: 4.37rem;//70px
+  padding: 1rem;//16px
+  font-size: 2rem;//32px
 }
 .informacion{
    //display: none;
 }
 .informacion{
 	p{
-   		text-transform:capitalize;
+   	text-transform:capitalize;
 	}
 }
 .listados{
-   border-bottom: solid 1px #dedede;
-   cursor: pointer;
-   display: block;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  background-color: rgba(255,255,255,0.5);
+  p{
+    padding: 0.75rem;
+    margin: 0;
+    font-size: 0.87rem;
+    @include transition-duration(0.6s);
+    &:hover{
+      background-color: rgba(255,255,255,0.9);
+      @include transition-duration(0.6s);
+    }
+  }
+}
+.img-otonio-viento{
+  background-image: url("../img/otonio-viento.gif");
 }

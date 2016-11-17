@@ -17,21 +17,24 @@
     <![endif]-->
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body class="cuerpo"  ng-controller="apiAppCtrl as vm">
+  <body class="cuerpo img-otonio-viento"  ng-controller="apiAppCtrl as vm">
       <div class="jumbotron">
          <div class="container">
-            <div class="row text-center">
-               <h1>...</h1>
+            <div class="row">
+              <div class="col-md-6 offset-md-3">
+                <h1>...</h1>
 
-               <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad..." ng-model="vm.nombre" ng-keyup="vm.buscaCiudad()">
-               <buttom id="ir" ng-click="vm.buscaTiempo(vm.nombre); showDetails = ! showDetails" >IR</buttom>
-               <div id="lista_resultados" ng-click="hide_Result = ! hide_Result" ng-hide="hide_Result">
+                <input class="input-buscador" type="text" name="ciudad" id="ciudad" placeholder="Ciudad..." ng-model="vm.nombre" ng-keyup="vm.buscaCiudad()">
+                <buttom id="ir" class="btn-ir" ng-click="vm.buscaTiempo(vm.nombre); showDetails = ! showDetails" >IR</buttom>
+                <div id="lista_resultados" class="listados" ng-click="hide_Result = ! hide_Result" ng-hide="hide_Result">
                   <p ng-repeat="ciudad in vm.ciudades | orderBy:vm.campo:vm.orden" ng-click="vm.valor_ciudad(ciudad);" >
                      <span>{{ciudad.city}}</span>,
                      <span>{{ciudad.state}}</span>
                      <span>{{ciudad.country_name}}</span>
                   </p>
-               </div>
+                </div>
+
+              </div>
             </div>
          </div>
       </div>
